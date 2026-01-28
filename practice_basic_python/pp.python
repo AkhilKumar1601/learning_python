@@ -1,0 +1,33 @@
+"""
+from typing import List;
+
+main_string = input("Enter any word: ");
+length = len(main_string) - 1;
+reversed_list : List[str] = [];
+
+while length >= 0:
+	reversed_list.append(main_string[length]);
+	length -= 1;
+
+reversed_string = "".join(reversed_list);
+print(reversed_string);
+"""
+
+#Checking the vowels in word.
+
+def check_vowels():
+	vowels = {'a', 'e', 'i', 'o', 'u'}
+	word = input("Enter the word: ")
+
+	vowel_count = 0
+
+	for ch in word.lower():
+    		if ch in vowels:
+        		vowel_count += 1
+
+	print(f"There are {vowel_count} vowels in the word.")
+
+
+# check_vowels();
+
+
