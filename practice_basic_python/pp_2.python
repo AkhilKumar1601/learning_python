@@ -1,0 +1,36 @@
+def reverse_string(s):
+	rev_str = "";
+	for ch in s.lower():
+		rev_str = ch + rev_str;
+	return rev_str;
+
+# print(reverse_string(s := input("Enter the word: ")));
+
+def count_vowels(s):
+	vowels = "aeiou";
+	vowel_count = 0;
+	for ch in s.lower():
+		if ch in vowels:
+			vowel_count += 1;
+	return vowel_count;
+
+# print(count_vowels(s := input("Enter the words to count vowel: ")));
+
+def max_number(arr):
+	maxi = arr[0];
+	for n in arr:
+		if n > maxi:
+			maxi = n;
+	return maxi;
+# print(max_number(arr := [3,33,32,444,32,3,87,99,0,448]));
+
+def remove_duplicates(sentence):
+	words = sentence.split();
+	result = [];
+	for word in words:
+		if word not in result:
+			result.append(word);
+	return " ".join(result);
+
+print(remove_duplicates(sentence := input("Enter the sentence: ")));
+
