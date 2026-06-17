@@ -39,3 +39,19 @@ for i in range(1,7):
     fruits.append(fruitName)
 
 print(fruits)
+
+marks = []
+for i in range(1,6):
+    marksEntered = int(input("Enter your marks"))
+    marks.append(marksEntered)
+
+marks.sort()
+print(marks)
+
+sum = 0
+for i in marks:
+    sum += i
+print("Addition of all the marks are: ",sum)
+
+d = (7,0,8,0,0,9)
+print("Count of zero in tuple d are: ", d.count(0))
